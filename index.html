@@ -354,13 +354,20 @@
         .meme-card .meme-img {
             width: 100%;
             aspect-ratio: 1 / 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
             position: relative;
             overflow: hidden;
             user-select: none;
+            background: #111;
+        }
+        .meme-card .meme-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .meme-card:hover .meme-img img {
+            transform: scale(1.05);
         }
         .meme-card .meme-img .meme-overlay-top,
         .meme-card .meme-img .meme-overlay-bottom {
@@ -373,7 +380,6 @@
             text-align: center;
             color: #fff;
             text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-            text-transform: uppercase;
             line-height: 1.3;
             pointer-events: none;
         }
@@ -397,26 +403,6 @@
         .meme-card .meme-caption p {
             font-size: 0.82rem;
             color: #999;
-        }
-
-        /* meme-img color variants */
-        .meme-bg1 {
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-        }
-        .meme-bg2 {
-            background: linear-gradient(135deg, #2d1b2e, #1a1a2e);
-        }
-        .meme-bg3 {
-            background: linear-gradient(135deg, #1e3a2f, #0d2818);
-        }
-        .meme-bg4 {
-            background: linear-gradient(135deg, #3a1a1a, #2e1212);
-        }
-        .meme-bg5 {
-            background: linear-gradient(135deg, #2a2a1a, #1e1e0a);
-        }
-        .meme-bg6 {
-            background: linear-gradient(135deg, #1a2a3a, #0e1a2e);
         }
 
         /* ===== 4. Quiz ===== */
@@ -696,8 +682,8 @@
             </div>
             <div class="meme-grid">
                 <div class="meme-card">
-                    <div class="meme-img meme-bg1">
-                        <span>🐔</span>
+                    <div class="meme-img">
+                        <img src="images/ikun1.jpg" alt="鸡你太美" loading="lazy" />
                         <div class="meme-overlay-top">WHEN YOU HEAR</div>
                         <div class="meme-overlay-bottom">鸡你太美</div>
                     </div>
@@ -707,8 +693,8 @@
                     </div>
                 </div>
                 <div class="meme-card">
-                    <div class="meme-img meme-bg2">
-                        <span>🏀</span>
+                    <div class="meme-img">
+                        <img src="images/ikun2.jpg" alt="练习两年半" loading="lazy" />
                         <div class="meme-overlay-top">SKILL ISSUE</div>
                         <div class="meme-overlay-bottom">练习两年半</div>
                     </div>
@@ -718,8 +704,8 @@
                     </div>
                 </div>
                 <div class="meme-card">
-                    <div class="meme-img meme-bg3">
-                        <span>👔</span>
+                    <div class="meme-img">
+                        <img src="images/ikun3.jpg" alt="背带裤战神" loading="lazy" />
                         <div class="meme-overlay-top">FASHION ICON</div>
                         <div class="meme-overlay-bottom">背带裤战神</div>
                     </div>
@@ -729,8 +715,8 @@
                     </div>
                 </div>
                 <div class="meme-card">
-                    <div class="meme-img meme-bg4">
-                        <span>🎤</span>
+                    <div class="meme-img">
+                        <img src="images/ikun4.jpg" alt="个人练习生" loading="lazy" />
                         <div class="meme-overlay-top">INTROVERT MEETING</div>
                         <div class="meme-overlay-bottom">个人练习生</div>
                     </div>
@@ -740,8 +726,8 @@
                     </div>
                 </div>
                 <div class="meme-card">
-                    <div class="meme-img meme-bg5">
-                        <span>🎶</span>
+                    <div class="meme-img">
+                        <img src="images/ikun5.jpg" alt="唱跳RAP篮球" loading="lazy" />
                         <div class="meme-overlay-top">MULTI-TALENTED</div>
                         <div class="meme-overlay-bottom">唱跳RAP篮球</div>
                     </div>
@@ -751,8 +737,8 @@
                     </div>
                 </div>
                 <div class="meme-card">
-                    <div class="meme-img meme-bg6">
-                        <span>👑</span>
+                    <div class="meme-img">
+                        <img src="images/ikun6.jpg" alt="鬼畜区顶流" loading="lazy" />
                         <div class="meme-overlay-top">LEGEND</div>
                         <div class="meme-overlay-bottom">鬼畜区顶流</div>
                     </div>
